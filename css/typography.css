@@ -1,0 +1,192 @@
+/*
+
+Template: Qloud - Cloud Computing, Apps & Server Responsive HTML5 Template
+Author: iqonicthemes.in
+Version: 1.0
+Design and Developed by: iqonicthemes.in
+
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+
+Import Css
+Font
+General
+Extra class
+Text color
+Background  color
+Buttons
+Form
+Section Title
+loader
+Back to Top
+
+======================================
+[ End table content ]
+======================================*/
+
+/*---------------------------------------------------------------------
+Import Css
+-----------------------------------------------------------------------*/
+@import url("all.min.css");
+@import url("owl.carousel.min.css");
+@import url("magnific-popup.css");
+@import url("font-awesome.min.css");
+@import url("ionicons.min.css");
+@import url("typicon.min.css");
+@import url("slick-theme.css");
+@import url("slick.css");
+@import url("tox-progress.css");
+@import url("timeline.css");
+@import url("wow.css");
+
+/*======================================
+ Font
+======================================*/
+@font-face { font-family: 'TeXGyreAdventor-Regular'; font-style: normal; font-weight: normal; src: url('../fonts/texgyreadventor-regular-webfont.woff'), url('../fonts/texgyreadventor-regular-webfont.woff') format('woff'); }
+@font-face { font-family: 'TeXGyreAdventor-Italic'; font-style: normal; font-weight: normal; src: url('../fonts/texgyreadventor-italic-webfont.woff'), url('../fonts/texgyreadventor-italic-webfont.woff') format('woff'); }
+@font-face { font-family: 'TeXGyreAdventor-Bold'; font-style: normal; font-weight: normal; src: url('../fonts/texgyreadventor-bold-webfont.woff'), url('../fonts/texgyreadventor-bold-webfont.woff') format('woff'); }
+@font-face { font-family: 'TeXGyreAdventor-BoldItalic'; font-style: normal; font-weight: normal; src: url('../fonts/texgyreadventor-bolditalic-webfont.woff'), url('../fonts/texgyreadventor-bolditalic-webfont.woff') format('woff'); }
+
+/*---------------------------------------------------------------------
+  General
+-----------------------------------------------------------------------*/
+*::-moz-selection { background: #0d1e67; color: #fff; text-shadow: none; }
+::-moz-selection { background: #0d1e67; color: #fff; text-shadow: none; }
+::selection { background: #0d1e67; color: #fff; text-shadow: none; }
+html, body { overflow: inherit !important; }
+body { font-family: 'Roboto', sans-serif; font-size: 1rem; font-weight: normal; line-height: 1.5; color: #5e7290; overflow-x: hidden; }
+a, .button { transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; color: #59597e; }
+a:focus { text-decoration: none !important; }
+a, .button, input { outline: medium none !important; color: #0D1E67; }
+h1, h2, h3, h4, h5, h6 { font-family: 'TeXGyreAdventor-Bold', sans-serif; color: #142149; margin: 0; -ms-word-wrap: break-word; word-wrap: break-word; line-height: 1.5; font-weight: 800; letter-spacing: 1px; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
+h1 { font-size: 3.052em; }
+h2 { font-size: 2.441em; }
+h3 { font-size: 1.953em; }
+h4 { font-size: 1.563em; }
+h5 { font-size: 1.3em; }
+h6 { font-size: 1em; }
+.container { max-width: 1200px; }
+.textgyreadventor { font-family: TeXGyreAdventor-Bold !important; }
+.bluetext { color: #0D1E67; }
+
+/*---------------------------------------------------------------------
+Extra class
+---------------------------------------------------------------------*/
+.overflow-h { overflow: hidden; }
+section { position: relative; z-index: 99; background: #ffffff; padding: 100px 0; display: block; width: 100%; overflow: hidden; }
+.overview-block-ptb { padding: 100px 0; }
+.overview-block-pt { padding: 100px 0 0 0; }
+.overview-block-pb { padding: 0 0 100px 0; }
+ul { margin: 0px; padding: 0px; }
+hr { margin: 0; padding: 0px; border-bottom: 1px solid #eeeeee; display: block; width: 100%; border-top: 0px; line-height: 1px; }
+
+/*---------------------------------------------------------------------
+Text color
+-----------------------------------------------------------------------*/
+.main-color { color: #0D1E67; }
+.text-white { color: #ffffff; }
+.text-black { color: #142149; }
+.text-gray { color: #5e7290; }
+
+/*---------------------------------------------------------------------
+Background  color
+-----------------------------------------------------------------------*/
+.main-bg { background: #0D1E67; }
+.blue-bg { background: #0d1e67; }
+.gray-bg { background: #F5F7FD; }
+.light-gray-bg { background: #f8f9fa; }
+.black-bg { background: #24262b; }
+
+/* ------------------------------
+Button
+---------------------------------*/
+.iq-button, [type=submit] { z-index: 1; font-size: 16px; font-weight: normal; position: relative; overflow: hidden; display: inline-block; vertical-align: middle; padding: 15px 45px; background: #0D1E67; color: #ffffff; transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; }
+
+/*semi round button*/
+.iq-btn-semi-round { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+
+/*round button*/
+.iq-btn-round { -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+
+/*Circle button*/
+.iq-btn-circle { -webkit-border-radius: 90px; -moz-border-radius: 90px; border-radius: 90px; }
+
+/*Small button*/
+.iq-btn-small { padding: 5px 15px; font-size: 12px; }
+
+/*Medium button*/
+.iq-btn-medium { padding: 10px 30px; font-size: 14px; }
+
+/*Large button*/
+.iq-btn-large { padding: 15px 45px; }
+
+/*Extra Large button*/
+.iq-btn-extra-large { padding: 15px 60px; }
+
+/*Right side icon button*/
+.btn-icon-right i { margin-left: 15px; }
+
+/*Left side icon button*/
+.btn-icon-left i { margin-right: 15px; }
+
+/*button with Shadow*/
+.iq-button.iq-btn-shadow:hover { -webkit-box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06); -moz-box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06); box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06); transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; }
+
+/*button with Outline*/
+.iq-btn-outline { color: #0D1E67; background: transparent; border: 2px solid #0D1E67; }
+.iq-button.iq-btn-link, .iq-btn-link { font-weight: 500; color: #0D1E67; background: transparent; padding: 0; }
+
+/*button Hover Effect */
+.iq-button:hover, .iq-button:focus { color: #ffffff; background: #000000 }
+.iq-btn-outline:hover, .iq-btn-outline:focus { border-color: #000000; color: #ffffff; }
+.iq-btn-link:hover, .iq-btn-link:focus { color: #000000; background: transparent; }
+
+/*---------------------------------------------------------------------
+   Section Title
+-----------------------------------------------------------------------*/
+.iq-title-box .iq-subtitle { color: #0D1E67; display: inline-block; }
+.iq-title-box .iq-title { margin-bottom: 0; }
+.iq-title-box .iq-title-desc { margin-top: 15px; margin-bottom: 0; }
+.iq-title-box { margin-bottom: 45px; }
+.iq-title-box i { font-size: 30px; margin-bottom: 15px; }
+
+/* Title Box Text Left*/
+.iq-title-box.text-center { margin-bottom: 45px; }
+.iq-title-white  .iq-subtitle, .iq-title-white  .iq-title, .iq-title-white  .iq-title-desc, .iq-title-box i { color: #ffffff; }
+
+/*style 2*/
+.iq-title-box.iq-title-box-2 .iq-subtitle {     color: #007bfc; background-color: #F2F5FE; padding: 2px 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-bottom: 15px; }
+
+/*----------------------------------------------------------------------
+ Form
+----------------------------------------------------------------------*/
+input, input.form-control, .form-control { width: 100%; border: 1px solid #6f6f6f; height: 52px; padding: 0 20px; margin-bottom: 0px; border-radius: 0; background: transparent; color: #ebebeb; }
+input[type="checkbox"], input.form-control[type="checkbox"] { margin-top: 0.5rem; background: #fff; height: auto; border: 1px solid #33e2a0; border-radius: 0px; }
+
+/*::-webkit-input-placeholder*/
+{ /* Chrome/Opera/Safari */
+color: #ebebeb; }
+::-moz-placeholder { /* Firefox 19+ */
+color: #ebebeb; }
+:-ms-input-placeholder { /* IE 10+ */
+color: #ebebeb; }
+:-moz-placeholder {/*  Firefox 18- */
+color: #ebebeb; }
+textarea.form-control { height: 230px; padding: 15px 30px; }
+input:hover, input.form-control:hover, input:focus, input.form-control:focus, textarea.form-control:hover, textarea.form-control:focus, select:hover, select:focus, select.form-control:focus, textarea:focus, textarea:hover { border: 1px solid #0D1E67; box-shadow: none; outline: none; }
+
+/*---------------------------------------------------------------------
+  Loader 
+-----------------------------------------------------------------------*/
+#loading { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #ffffff; z-index: 9999; }
+#loading img { width: 120px; }
+
+/*---------------------------------------------------------------------
+                             Back to Top
+-----------------------------------------------------------------------*/
+#back-to-top .top { z-index: 999; position: fixed; margin: 0px; color: #ffffff; background: #0D1E67; position: fixed; bottom: 30px; right: 25px; z-index: 999; font-size: 26px; width: 50px; height: 50px; text-align: center; line-height: 50px; border-radius: 10px; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
+#back-to-top .top:hover { background: #ffffff; color: #0D1E67; -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); }
